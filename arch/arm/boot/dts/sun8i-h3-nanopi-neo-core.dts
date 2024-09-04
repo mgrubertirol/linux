@@ -70,3 +70,14 @@
     /* eMMC is missing pull-ups */
     bias-pull-up;
 };
+
+&spi1 {
+	status = "okay";
+	spidev1: spi@1 {
+		compatible = "nanopi,spidev";
+		reg = <0>;
+		spi-max-frequency = <10000000>;
+		status = "okay";
+	};
+};
+
